@@ -1,0 +1,19 @@
+.widget__header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1.5em;
+  .widget__header--city {
+    font-size: 2em;
+    font-weight: 300;
+    line-height: 0;
+  }
+  .widget__header--temp {
+    font-size: 6.25em;
+    line-height: 1.325em;
+    font-weight: 500;
+  }
+  .widget__header--state {
+    font-size: 1.6em;
+  }
+}
