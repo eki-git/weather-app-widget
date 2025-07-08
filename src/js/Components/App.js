@@ -1,11 +1,17 @@
 import React from "react";
-import styles from "./Widget.scss";
-const Widget = (props) => {
+import styles from "../../styles/main.scss";
+import Widget from "./WeatherWidget/Widget";
+import data from "../data/weather";
+console.log(data);
+const App = () => {
     return (
-        <section className="widget__section">
+        <>
 
-        </section>
+            <Widget data={data[0]}>
+
+            </Widget>
+        </>
     )
 }
 
-export default Widget;
+export default App;

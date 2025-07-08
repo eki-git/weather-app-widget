@@ -1,0 +1,11 @@
+.hourly__forecast {
+  display: flex;
+  justify-content: center;
+  .hourly__forecast--item {
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    text-align: center;
+
+  }
+}
