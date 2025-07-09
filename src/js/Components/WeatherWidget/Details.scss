@@ -1,0 +1,10 @@
+.widget__details {
+  display: flex;
+  flex-direction: column; //ker gre na dol
+  .widget__details__sun {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 1em;
+  }
+}

@@ -62,11 +62,9 @@ module.exports = {
             },
             {
                 test: /\.(jpe?g|gif|png|svg)$/,
-                loader: "file-loader",
-                options: {
-                    name: "[name].[ext]",
-                    publicPath: "/images/",
-                    outputPath: "/images/"
+                type: 'asset/resource',
+                generator: {
+                    filename: 'images/[name][ext]'
                 }
             }
         ],
@@ -74,6 +72,14 @@ module.exports = {
     plugins: [
         new webpack.ProvidePlugin({
             process: "process/browser",
+        }),
+        new HtmlWebpackPlugin({
+            filename: "index.html",
+            template: entryPath +"/index.html",
+            inject: false
+        }),
+        new MiniCssExtractPlugin({
+            filename: "css/style.css",
         }),
 
     ],
